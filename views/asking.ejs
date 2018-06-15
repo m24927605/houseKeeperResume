@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+  crossorigin="anonymous">
+<style>
+  .table th {
+    text-align: center;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+
+<!--PDF插件END-->
+<title>SIGA MANPOWER GROP.</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <h3 class="text-center">SIGA MANPOWER GROP.</h3>
+      <h4 class="text-center">BIO-DATA OF FOREIGN DOMESTIC WORKER (FDW) 家庭管家简历</h4>
+      <p class="text-left">*Please ensure that you run through the information within the bio-data as it is an important document to help you
+        select a suitable FDW</p>
+      <p class="text-left">(A) PROFILE OF FDW</p>
+      <p class="text-left">A1 Personal Information个人资料</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <span>1. Name姓名:</span>
+        <input id="name" type="text" />
+        <br>
+        <span>2. Date of birth生日:</span>
+        <input id="birthdate" type="text" />
+        <br>
+        <span>3. Place of birth出生地:</span>
+        <input id="birthPlace" type="text" />
+        <br>
+        <span>4. Height &weight:</span>
+        <span>cm</span>
+        <input id="height" type="text" />
+        <span>kgs</span>
+        <input id="weight" type="text" />
+        <br>
+        <span>5. Residential address in home country居住地址:</span>
+        <input id="residentAddress" type="text" name="txt1" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+        <br>
+        <span>6. Name of port / airport to be repatriated to出发口岸:</span>
+        <input id="airportName" type="text" name="txt1" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+        <br>
+        <span>7. Contact number in home country联系电话:</span>
+        <input id="contactNumber" type="text" name="txt1" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+        <br>
+        <span>8. Cellphone:</span>
+        <input id="cellphone" type="text">
+        <br>
+        <span>9. EmailAddress:</span>
+        <input id="emailAddress" type="text">
+        <br>
+        <span>10. Religion宗教:</span>
+        <input id="religion" type="text" />
+        <br>
+        <span>11. Education level教育水平:</span>
+        <input id="educationLevel" type="text" />
+        <br>
+        <span>12. Number of siblings家中排行:</span>
+        <input id="numberSibling" type="text" name="txt1" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+        <br>
+        <span>13. Marital status婚姻状况:</span>
+        <input id="maritalStatus" type="text" />
+        <br>
+        <span>14. Number of children子女人数:</span>
+        <input id="numberChildren" type="text" name="txt1" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+        <br>
+        <span> Age(s)of children子女年龄 (if any):</span>
+        <input id="ageChildren" type="text" name="txt1" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+        <br>
+        <span>A2 Medical History/Dietary Restrictions医疗病史</span>
+        <br>
+        <span>15. Allergies过敏原 (if any):</span>
+        <input id="allergies" type="text" />
+        <br>
+        <span>A3 Others 其他</span>
+        <br>
+        <br> SKILLS OF FDW经验技能
+      </div>
+      <div class="col-xs-6">
+        <form ref='uploadForm' id='uploadForm'>
+          <label for="imageFile" class="btn btn-primary">Full-body shot select</label>
+          <input type="file" id="imageFile" name="imageFile" style="visibility:hidden;"/>
+          <input type='submit' value='Upload!' />
+        </form>
+        <img id="personImage" src="" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">S/No</th>
+            <th scope="col">Areas of Work</th>
+            <th scope="col">Experience
+              <br>Yes/No
+              <br>If yes,state the no. of years
+            </th>
+            <th scope="col text-center">Assessment/Observation
+              <br>Please state qualitative observations of FDW and/or rate the FDW(indicate N.A. of no evaluation was done)
+              <br>Poor ......Excellent...N.A.
+              <br>1 2 3 4 5 N.A.
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1.</th>
+            <td>Care of infants/children
+              <br> Please specify age range:
+              <input id="row1col1" type="text" name="txt1" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+            </td>
+            <td>
+              <textarea id="row1col2" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="row1col3" style="min-width: 100%;resize:none"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.</th>
+            <td>Care of elderly</td>
+            <td>
+              <textarea id="row2col1" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="row2col2" style="min-width: 100%;resize:none"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3.</th>
+            <td>Care of disabled</td>
+            <td>
+              <textarea id="row3col1" style="min-width: 100%;resize:none"></textarea>
+
+            </td>
+            <td>
+              <textarea id="row3col2" style="min-width: 100%;resize:none"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4.</th>
+            <td>General housework</td>
+            <td>
+              <textarea id="row4col1" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="row4col2" style="min-width: 100%;resize:none"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">5.</th>
+            <td>Cooking
+              <br>Please specify cuisines:
+            </td>
+            <td>
+              <textarea id="row5col1" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="row5col2" style="min-width: 100%;resize:none"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">6.</th>
+            <td>Language abilities(spoken)
+              <br>Please specify:
+              <input id="row6col1" type="text" name="txt1" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+            </td>
+            <td>
+              <textarea id="row6col2" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="row6col3" style="min-width: 100%;resize:none"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7.</th>
+            <td>Other skills,if any
+              <br>Please specify:
+              <input id="row7col1" type="text" name="txt1" size="15" style=" border:1px; border-bottom-style: solid;border-top-style: none;border-left-style:none;border-right-style:none;">
+            </td>
+            <td>
+              <textarea id="row7col2" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="row7col3" style="min-width: 100%;resize:none"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      (C) EMPLOYMENT HISTORY OF THE FDW工作经验
+    </div>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2">Date</th>
+            <th rowspan="2">Country(including FDW's home country)</th>
+            <th rowspan="2">Empolyer</th>
+            <th rowspan="2">Work Duties</th>
+            <th rowspan="2">Remarks</th>
+          </tr>
+          <tr>
+            <th>From</th>
+            <th>To</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <textarea id="EHOTF_row1col1" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row1col2" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row1col3" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row1col4" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row1col5" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row1col6" style="min-width: 100%;resize:none"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="EHOTF_row2col1" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row2col2" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row2col3" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row2col4" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row2col5" style="min-width: 100%;resize:none"></textarea>
+            </td>
+            <td>
+              <textarea id="EHOTF_row2col6" style="min-width: 100%;resize:none"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <span>Date日期:</span>
+      <input id="signDate" type="text">
+    </div>
+    <div class="row">
+      <div class="text-center">
+        <button id="confirm" type="button" class="btn btn-success">Confirm</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    var allHtml = '';
+    var imageSrc = '';
+
+    //form Submit
+    $("#uploadForm").submit(function (evt) {
+        evt.preventDefault();
+      var formData = new FormData($(this)[0]);
+      $.ajax({
+        url: '/upload',
+        type: 'POST',
+        data: formData,
+        async: false,
+        cache: false,
+        contentType: false,
+        enctype: 'multipart/form-data',
+        processData: false,
+        success: function (response) {
+          $("#personImage").attr("src", 'images/' + response.imageSrc);
+          imageSrc = response.imageSrc;
+          allHtml = document.documentElement.innerHTML;
+
+        },
+         error: function (jqXHR, textStatus) {
+          console.error('jqXHR:', jqXHR);
+          console.error('textStatus:', textStatus);
+        }
+      });
+      return false;
+    });
+    $("#confirm").click(function () {
+      console.log()
+      var data = {
+        imageSrc: imageSrc,
+        name: $('#name').val(),
+        birthdate: $('#birthdate').val(),
+        birthPlace: $('#birthPlace').val(),
+        height: $('#height').val(),
+        weight: $('#weight').val(),
+        residentAddress: $('#residentAddress').val(),
+        airportName: $('#airportName').val(),
+        contactNumber: $('#contactNumber').val(),
+        cellphone:$('#cellphone').val(),
+        emailAddress:$('#emailAddress').val(),
+        religion: $('#religion').val(),
+        educationLevel: $('#educationLevel').val(),
+        numberSibling: $('#numberSibling').val(),
+        maritalStatus: $('#maritalStatus').val(),
+        numberChildren: $('#numberChildren').val(),
+        ageChildren: $('#ageChildren').val(),
+        allergies: $('#allergies').val(),
+        row1col1: $('#row1col1').val(),
+        row1col2: $('#row1col2').val(),
+        row1col3: $('#row1col3').val(),
+        row2col1: $('#row2col1').val(),
+        row2col2: $('#row2col2').val(),
+        row3col1: $('#row3col1').val(),
+        row3col2: $('#row3col2').val(),
+        row4col1: $('#row4col1').val(),
+        row4col2: $('#row4col2').val(),
+        row5col1: $('#row5col1').val(),
+        row5col2: $('#row5col2').val(),
+        row6col1: $('#row6col1').val(),
+        row6col2: $('#row6col2').val(),
+        row6col3: $('#row6col3').val(),
+        row7col1: $('#row7col1').val(),
+        row7col2: $('#row7col2').val(),
+        row7col3: $('#row7col3').val(),
+        EHOTF_row1col1: $('#EHOTF_row1col1').val(),
+        EHOTF_row1col2: $('#EHOTF_row1col2').val(),
+        EHOTF_row1col3: $('#EHOTF_row1col3').val(),
+        EHOTF_row1col4: $('#EHOTF_row1col4').val(),
+        EHOTF_row1col5: $('#EHOTF_row1col5').val(),
+        EHOTF_row1col6: $('#EHOTF_row1col6').val(),
+        EHOTF_row2col1: $('#EHOTF_row2col1').val(),
+        EHOTF_row2col2: $('#EHOTF_row2col2').val(),
+        EHOTF_row2col3: $('#EHOTF_row2col3').val(),
+        EHOTF_row2col4: $('#EHOTF_row2col4').val(),
+        EHOTF_row2col5: $('#EHOTF_row2col5').val(),
+        EHOTF_row2col6: $('#EHOTF_row2col6').val(),
+        signDate: $('#signDate').val()
+      }
+      if(data.name && data.contactNumber && data.birthPlace){
+      $.ajax({
+        url: '/confirm',
+        type: 'POST',
+        data: data,
+        success: function (msg) {
+          window.location.href=msg.redirect;
+
+        },
+        error: function (jqXHR, textStatus) {
+          console.error('jqXHR:', jqXHR);
+          console.error('textStatus:', textStatus);
+        }
+      });
+      }
+      else{
+        alert('Name 姓名 和 Contact number in home country联系电话 和 Place of birth出生地 必填');
+      }
+    });
+
+  </script>
+</body>
+
+</html>

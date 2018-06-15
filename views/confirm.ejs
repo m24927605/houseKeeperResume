@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+  crossorigin="anonymous">
+<style>
+  .table th {
+    text-align: center;
+  }
+  span {
+    font-size: 20px;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+
+<!--PDF插件END-->
+<title>SIGA MANPOWER GROP.</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <h3 class="text-center">SIGA MANPOWER GROP.</h3>
+      <h4 class="text-center">BIO-DATA OF FOREIGN DOMESTIC WORKER (FDW) 家庭管家简历</h4>
+      <p class="text-left">*Please ensure that you run through the information within the bio-data as it is an important document to help you
+        select a suitable FDW</p>
+      <p class="text-left">(A) PROFILE OF FDW</p>
+      <p class="text-left">A1 Personal Information个人资料</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <span>1. Name姓名:<%=name %></span>
+        <br>
+        <span>2. Date of birth生日:<%=birthdate %></span>
+        <br>
+        <span>3. Place of birth出生地:<%=birthPlace %></span>
+        <br>
+        <span>4. Height &weight:</span>
+        <span><%=height %> cm</span>
+        <span><%=weight %> kgs</span>
+        <br>
+        <span>5. Residential address in home country居住地址:<%=residentAddress %></span>
+        <br>
+        <span>6. Name of port / airport to be repatriated to出发口岸:<%=airportName %></span>
+        <br>
+        <span>7. Contact number in home country联系电话:<%=contactNumber %></span>
+        <br>
+        <span>8. Cellphone:<%=cellphone %></span>
+        <br>
+        <span>9. EmailAddress:<%=emailAddress %></span>
+        <br>
+        <span>10. Religion宗教:<%=religion %></span>
+        <br>
+        <span>11. Education level教育水平:<%=educationLevel %></span>
+        <br>
+        <span>12. Number of siblings家中排行:<%=numberSibling %></span>
+        <br>
+        <span>13. Marital status婚姻状况:<%=maritalStatus %></span>
+        <br>
+        <span>14. Number of children子女人数:<%=numberChildren %></span>
+        <br>
+        <span> Age(s)of children子女年龄 (if any):<%=ageChildren %></span>
+        <br>
+        <span>A2 Medical History/Dietary Restrictions医疗病史</span>
+        <br>
+        <span>15. Allergies过敏原 (if any):<%=allergies %></span>
+        <br>
+        <span>A3 Others 其他</span>
+        <br>
+        <br> SKILLS OF FDW经验技能
+      </div>
+      <div class="col-xs-6">
+        <img id="personImage" src="images/<%= imageSrc %>" class="img-responsive">
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">S/No</th>
+            <th scope="col">Areas of Work</th>
+            <th scope="col">Experience
+              <br>Yes/No
+              <br>If yes,state the no. of years
+            </th>
+            <th scope="col text-center">Assessment/Observation
+              <br>Please state qualitative observations of FDW and/or rate the FDW(indicate N.A. of no evaluation was done)
+              <br>Poor ......Excellent...N.A.
+              <br>1 2 3 4 5 N.A.
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1.</th>
+            <td>Care of infants/children
+              <br> Please specify age range:<%=row1col1 %>
+            </td>
+            <td>
+            <%=row1col2 %>
+            </td>
+            <td>
+            <%=row1col3 %>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.</th>
+            <td>Care of elderly</td>
+            <td>
+            <%=row2col1 %>
+            </td>
+            <td>
+            <%=row2col2 %>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3.</th>
+            <td>Care of disabled</td>
+            <td>
+            <%=row3col1 %>
+            </td>
+            <td>
+            <%=row3col2 %>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4.</th>
+            <td>General housework</td>
+            <td>
+            <%=row4col1 %>
+            </td>
+            <td>
+            <%=row4col2 %>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">5.</th>
+            <td>Cooking
+              <br>Please specify cuisines:
+            </td>
+            <td>
+            <%=row5col1 %>
+            </td>
+            <td>
+            <%=row5col2 %>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">6.</th>
+            <td>Language abilities(spoken)
+              <br>Please specify:
+              <%=row6col1 %>
+            </td>
+            <td>
+            <%=row6col2 %>
+            </td>
+            <td>
+            <%=row6col3 %>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7.</th>
+            <td>Other skills,if any
+              <br>Please specify:<%=row7col1 %>
+            </td>
+            <td>
+            <%=row7col2 %>
+            </td>
+            <td>
+            <%=row7col3 %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      (C) EMPLOYMENT HISTORY OF THE FDW工作经验
+    </div>
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2">Date</th>
+            <th rowspan="2">Country(including FDW's home country)</th>
+            <th rowspan="2">Empolyer</th>
+            <th rowspan="2">Work Duties</th>
+            <th rowspan="2">Remarks</th>
+          </tr>
+          <tr>
+            <th>From</th>
+            <th>To</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+            <%=EHOTF_row1col1 %>
+            </td>
+            <td>
+            <%=EHOTF_row1col2 %>
+            </td>
+            <td>
+            <%=EHOTF_row1col3 %>
+            </td>
+            <td>
+            <%=EHOTF_row1col4 %>
+            </td>
+            <td>
+            <%=EHOTF_row1col5 %>
+            </td>
+            <td>
+            <%=EHOTF_row1col6 %>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <%=EHOTF_row2col1 %>
+            </td>
+            <td>
+            <%=EHOTF_row2col2 %>
+            </td>
+            <td>
+            <%=EHOTF_row2col3 %>
+            </td>
+            <td>
+            <%=EHOTF_row2col4 %>
+            </td>
+            <td>
+            <%=EHOTF_row2col5 %>
+            </td>
+            <td>
+            <%=EHOTF_row2col6 %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <span>Date日期:</span>
+      <%=signDate %>
+    </div>
+    <div class="row">
+      <div class="text-center">
+        <button id="sendHtml" type="button" class="btn btn-success">Send Email</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    var allHtml = document.documentElement.innerHTML;
+    var imgSrc= $("#personImage").attr("src");
+
+    $("#sendHtml").click(function () {
+      $.ajax({
+        url: '/sendEmail',
+        type: 'POST',
+        data: {
+          allHtml: allHtml,
+          imgSrc:imgSrc
+        },
+        success: function (msg) {
+          if(msg.status){
+            alert('Success 成功');
+          }
+          else{
+            alert('Fail 失敗');
+          }
+        },
+        error: function (jqXHR, textStatus) {
+          console.error('jqXHR:', jqXHR);
+          console.error('textStatus:', textStatus);
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>
