@@ -91,11 +91,13 @@ router.post('/sendEmail', (req, res, next) => {
 
       let emailOptions = {
         //寄件者
-        from: [process.env.FROM],
+        //from: [process.env.FROM],
         //收件者
-        to: [process.env.TO1, process.env.TO2],
+        //to: [process.env.TO1, process.env.TO2],
         //to: ['arthurxu12@gmail.com','sigatour@163.com'],
         //副本
+        from:['m24927605@gmail.com'],
+        to:['s99214054@mail1.ncnu.edu.tw'],
         cc: '',
         //密件副本
         bcc: '',
